@@ -1,5 +1,6 @@
-// // /** @type {import('tailwindcss').Config} */
+// /** @type {import('tailwindcss').Config} */
 // module.exports = {
+//   mode: 'jit',
 //   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
 //   darkMode: false, // or 'media' or 'class'
 //   theme: {
@@ -12,13 +13,16 @@
 // };
 
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  mode: 'jit',
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  // content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: 'class',
   theme: {
     fontFamily: {
       display: ['Open Sans', 'sans-serif'],
       body: ['Open Sans', 'sans-serif'],
     },
+
     extend: {
       fontSize: {
         14: '14px',

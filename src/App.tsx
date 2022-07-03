@@ -1,15 +1,21 @@
 import React from 'react';
+import { FiSettings } from 'react-icons/fi';
 import './App.css';
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 function App() {
   return (
-    <div className='p-10 justify-center'>
-      <h1 className='text-9xl underline font-black text-center'>sdfsdf</h1>
-      <p className='underline '>asdfasd</p>
-      <h1 className='text-9xl underline'>sdfsdf</h1>
-      <h1 className='text-9xl underline'>sdfsdf</h1>
-      <h1 className='text-2xl underline'>sdfsdf</h1>
-      <h1 className='text-liac'>sdfsdf</h1>
+    <div className=' flex relative dark:bg-main-dark-bg'>
+      <div className=' fixed right-4 bottom-4 ' style={{ zIndex: '1000' }}>
+        <TooltipComponent content='Settings' position='TopCenter'>
+          <button
+            className=' text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white '
+            style={{ background: 'blue', borderRadius: '50%' }}
+          >
+            <FiSettings />
+          </button>
+        </TooltipComponent>
+      </div>
     </div>
   );
 }
