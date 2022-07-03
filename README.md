@@ -35,3 +35,8 @@
 1. setting
 
 tailwindcss create react app 셋팅 하기
+
+2. css settings
+   font setting:
+   color setting:
+   웹페이지 가장 큰 화면 셋팅:
